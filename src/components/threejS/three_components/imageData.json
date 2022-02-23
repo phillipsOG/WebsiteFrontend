@@ -1,0 +1,23 @@
+[
+    {
+      "name": "Lumi-img1",
+      "imgSrc": "1.png",
+      "url": "https://cdn4.buysellads.net/uu/1/103855/1637082754-logo-twilio-red_250x100px_59_.png"
+    },
+    {
+        "name": "Lumi-img2",
+        "imgSrc": "2.png",
+        "url": "https://cdn4.buysellads.net/uu/1/103855/1637082754-logo-twilio-red_250x100px_59_.png"
+      },
+      {
+        "name": "Lumi-img3",
+        "imgSrc": "3.png",
+        "url": "https://cdn4.buysellads.net/uu/1/103855/1637082754-logo-twilio-red_250x100px_59_.png"
+      },
+      {
+        "name": "Lumi-img4",
+        "imgSrc": "4.png",
+        "url": "https://cdn4.buysellads.net/uu/1/103855/1637082754-logo-twilio-red_250x100px_59_.png"
+      }
+  ]
+  

@@ -1,0 +1,245 @@
+// @font-face {
+//   font-family: 'movement';
+//   src: url('../../fonts/MovementV.ttf') format('truetype');
+// }
+
+// @font-face {
+//   font-family: 'NotoSansHK';
+//   src: url('../../fonts/NotoSansHK-Thin.otf') format('OpenType');
+// }
+
+header {
+  font-family: Manrope;
+  position: absolute;
+  z-index: 99;
+  width: 100%;
+
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+      padding-left: 6%;
+      font-weight: 700;
+      font-size: 37px;
+      font-weight: 400;
+      a {
+        color: blue;
+        text-decoration: none;
+        &::hover {
+          color: cyan;
+          opacity: 80%;
+        }
+      }
+    }
+    .logo:hover {
+      transition: 650ms;
+      opacity: 60%;
+    }
+  }
+  .listContainer {
+    // font-family: Arial, Helvetica, sans-serif;
+    font-size: 19px;
+    padding: 18px;
+    display: flex;
+    align-items: start;
+    list-style-type: none;
+    .list {
+      padding: 6px 0;
+      margin-right: 3rem;
+      a {
+        position: relative;
+        display: block;
+        text-decoration: none;
+        color: #ecf0f1;
+        padding: 4px 0;
+        transition: 0.5s;
+
+        &::after {
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 1px;
+          top: 100%;
+          left: 0;
+          background: black;
+          transition: transform 0.5s;
+          transform: scaleX(0);
+          transform-origin: right;
+        }
+        &:hover {
+          color: #95a5a6;
+        }
+
+        &:hover::after {
+          transform: scaleX(1);
+          transform-origin: left;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 481px) {
+  header {
+    font-family: Manrope;
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .logo {
+        padding-bottom: 5%;
+        font-size: 15px;
+        a {
+          &::hover {
+            color: cyan;
+            opacity: 80%;
+          }
+        }
+      }
+      .logo:hover {
+        color: cyan;
+        opacity: 30%;
+      }
+    }
+    ul {
+      font-size: 15px;
+      display: flex;
+      align-items: start;
+      list-style-type: none;
+      padding-right: 15%;
+      padding-top: 1%;
+      li {
+        margin-right: 5%;
+        a {
+          position: relative;
+          display: block;
+          text-decoration: none;
+          color: #ecf0f1;
+          transition: 0.5s;
+
+          &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            top: 100%;
+            left: 0;
+            background: #ffffff;
+            transition: transform 0.5s;
+            transform: scaleX(0);
+            transform-origin: right;
+          }
+          &:hover {
+            color: #95a5a6;
+          }
+
+          &:hover::after {
+            transform: scaleX(1);
+            transform-origin: left;
+          }
+        }
+      }
+    }
+  }
+}
+
+.logo_Text {
+  font-family: Manrope;
+  position: relative;
+  padding-left: 3%;
+  font-size: 10px;
+  color: #95a5a6;
+  word-wrap: break-word;
+  display: none;
+}
+
+.menu:hover {
+  opacity: 75%;
+}
+
+.header:hover {
+  background-color: #95a5a6;
+}
+
+.navMenuOpen {
+  background-color: #95a5a6;
+}
+
+.menuContainer {
+  display: right;
+}
+
+.nav-text {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-top: 38px;
+  font-weight: 500;
+  a {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color: #000;
+    padding: 6px 0;
+    transition: 0.5s;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      top: 100%;
+      left: 0;
+      background: #000;
+      transition: transform 0.5s;
+      transform: scaleX(0);
+      transform-origin: right;
+    }
+    &:hover {
+      color: #95a5a6;
+    }
+
+    &:hover::after {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+  }
+}
+
+.exitMenu {
+  top: 2vh;
+  position: relative;
+  left: 4vw;
+}
+
+.navbar-container {
+  margin-top: 50px;
+}
+
+.nav-menu {
+  background-color: floralwhite;
+  width: 10vw;
+  height: 100vh;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 90vw;
+  transition: 850ms;
+}
+
+.nav-menu.active {
+  left: 0;
+  transition: 350ms;
+}
+
+.menuIcon:hover {
+  transition: 650ms;
+  transform: rotate(180deg);
+}

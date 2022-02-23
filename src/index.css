@@ -1,0 +1,8 @@
+body {
+  background-color: #e2e2d7;
+}
+@font-face {
+  font-family: 'Manrope';
+  src: url('./components/fonts/Manrope-VariableFont_wght.ttf')
+    format('truetype');
+}
